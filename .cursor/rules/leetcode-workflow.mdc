@@ -1,0 +1,45 @@
+---
+description: LeetCode 刷题文件创建、归档与模板规范
+alwaysApply: true
+---
+
+# LeetCode 文件创建规范
+
+用户给出 LeetCode 链接时，默认只建文件、不给解法，等用户写不出来再指导。
+
+## 新题文件（进行中）
+
+- **位置**：项目根目录
+- **文件名**：`题号. 题名.py`（例：`9. Palindrome Number.py`）
+- **内容**：docstring（题号、链接、描述、约束）+ `class Solution` + 方法签名 + `pass`
+- **不要包含**：`# Test cases` / `if __name__ == "__main__"` 测试块
+- **不要包含**：解法（除非用户明确要求）
+
+## 已完成题目归档
+
+当用户发来**新题目链接**，且**上一题已提供 Accept 版本**时，视为上一题完成，自动归档：
+
+1. 路径格式：`大类/子类/题号. 题名.py`（两层文件夹，先大类再细分子算法）
+2. 大类与 LeetCode 主标签对齐（如 `Math/`、`String/`、`Array/`、`Hash Table/`、`Linked List/`、`Tree/` 等）
+3. 子类按**具体算法或技巧**划分，尽量细且语义清晰
+4. 文件名不变
+5. 根目录只保留**当前正在做**的那一题
+
+### 子类命名示例
+
+| 大类 | 示例子类 |
+|------|----------|
+| Math | Digit Manipulation, Number Theory, Bit Manipulation, Geometry |
+| String | Parsing, Two Pointers, Sliding Window, Pattern Matching |
+| Array | Two Pointers, Sliding Window, Prefix Sum, Binary Search |
+| Hash Table | Counting, Mapping, Set Lookup |
+| Linked List | Fast Slow Pointers, Reversal, Merge |
+| Tree | DFS, BFS, BST |
+| Dynamic Programming | 1D DP, 2D DP, Knapsack |
+| Graph | BFS, DFS, Union Find, Topological Sort |
+
+无合适子类时可新建；同一题只归入一个最贴切的路径。
+
+## 代码风格
+
+见 `code-style-priority.mdc`：清晰规范优先，优化只谈时间复杂度。

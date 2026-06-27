@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:leetcode.com)",
+      "WebSearch",
+      "Bash(echo 'export http_proxy=http://127.0.0.1:7890')",
+      "Bash(echo 'export https_proxy=http://127.0.0.1:7890')",
+      "Bash(pip3 --version)",
+      "Bash(g++ --version)",
+      "Bash(gcc --version)",
+      "Bash(clang++ --version)",
+      "Bash(make --version)",
+      "Bash(cmake --version)"
+    ]
+  }
+}
