@@ -1,11 +1,16 @@
 ---
-description: LeetCode 刷题文件创建、归档与模板规范
+description: LeetCode 刷题文件创建、归档、Git 同步与模板规范
 alwaysApply: true
 ---
 
 # LeetCode 文件创建规范
 
 用户给出 LeetCode 链接时，默认只建文件、不给解法，等用户写不出来再指导。
+
+## 新题链接的处理顺序（优先速度）
+
+1. **先**在根目录建好新题文件（用户可立刻开始写）
+2. **同时或之后**再做归档上一题 + Git 提交推送（不阻塞用户做题）
 
 ## 新题文件（进行中）
 
@@ -17,10 +22,10 @@ alwaysApply: true
 
 ## 已完成题目归档
 
-当用户发来**新题目链接**，且**上一题已提供 Accept 版本**时，视为上一题完成，自动归档：
+当用户发来**新题目链接**、说 **archive**、或上一题已完成时，归档上一题：
 
 1. 路径格式：`大类/子类/题号. 题名.py`（两层文件夹，先大类再细分子算法）
-2. 大类与 LeetCode 主标签对齐（如 `Math/`、`String/`、`Array/`、`Hash Table/`、`Linked List/`、`Tree/` 等）
+2. 大类与 LeetCode 主标签对齐（如 `Math/`、`String/`、`Array/` 等）
 3. 子类按**具体算法或技巧**划分，尽量细且语义清晰
 4. 文件名不变
 5. 根目录只保留**当前正在做**的那一题
@@ -39,6 +44,16 @@ alwaysApply: true
 | Graph | BFS, DFS, Union Find, Topological Sort |
 
 无合适子类时可新建；同一题只归入一个最贴切的路径。
+
+## Git 同步（归档后或用户说 push 时）
+
+在用户做题期间或归档完成后执行，**不阻塞**新题文件创建。全机 Git 身份规范见用户级 `~/.cursor/rules/git-github-identity.mdc`。
+
+1. `git status` / `git diff` 确认变更
+2. `git add` 相关 `.py` 与规则文件（不含 `.DS_Store`、`__pycache__/`）
+3. `git commit` + `git push` 到 GitHub
+
+Commit message 示例：`archive: #17 ...` / `add: #18 4Sum`
 
 ## 代码风格
 
