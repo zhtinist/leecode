@@ -30,9 +30,30 @@ Constraints:
     It's guaranteed that you can reach nums[n - 1].
 """
 
+from collections import deque
 from typing import List
 
 
 class Solution:
     def jump(self, nums: List[int]) -> int:
-        pass
+        n = len(nums)
+        if n == 1:
+            return 0
+
+        queue = deque([0])
+        visited = {0}
+        steps = 0
+
+        while queue:
+            steps += 1
+            for _ in range(len(queue)):
+                i = queue.popleft()
+                for j in range(i + 1, min(i + nums[i] + 1, n)):
+                    if j in visited:
+                        continue
+                    if j == n - 1:
+                        return steps
+                    visited.add(j)
+                    queue.append(j)
+
+        return steps
