@@ -28,4 +28,23 @@ from typing import List
 
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        pass
+        result: List[List[int]] = []
+        path: List[int] = []
+        used = [False] * len(nums)
+
+        def dfs() -> None:
+            if len(path) == len(nums):
+                result.append(path[:])
+                return
+
+            for i, num in enumerate(nums):
+                if used[i]:
+                    continue
+                used[i] = True
+                path.append(num)
+                dfs()
+                path.pop()
+                used[i] = False
+
+        dfs()
+        return result
