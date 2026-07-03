@@ -73,4 +73,46 @@ from typing import List
 
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        pass
+        return (
+            self._valid_rows(board)
+            and self._valid_cols(board)
+            and self._valid_boxes(board)
+        )
+
+    def _valid_rows(self, board: List[List[str]]) -> bool:
+        for row in board:
+            seen = set()
+            for cell in row:
+                if cell == ".":
+                    continue
+                if cell in seen:
+                    return False
+                seen.add(cell)
+        return True
+
+    def _valid_cols(self, board: List[List[str]]) -> bool:
+        for col in range(9):
+            seen = set()
+            for row in range(9):
+                cell = board[row][col]
+                if cell == ".":
+                    continue
+                if cell in seen:
+                    return False
+                seen.add(cell)
+        return True
+
+    def _valid_boxes(self, board: List[List[str]]) -> bool:
+        for box in range(9):
+            seen = set()
+            start_row = (box // 3) * 3
+            start_col = (box % 3) * 3
+            for i in range(3):
+                for j in range(3):
+                    cell = board[start_row + i][start_col + j]
+                    if cell == ".":
+                        continue
+                    if cell in seen:
+                        return False
+                    seen.add(cell)
+        return True
