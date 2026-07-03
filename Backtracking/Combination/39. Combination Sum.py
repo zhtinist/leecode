@@ -42,4 +42,25 @@ from typing import List
 
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        pass
+        result = []
+        self.dfs(candidates, target, 0, [], result)
+        return result
+
+    def dfs(
+        self,
+        candidates: List[int],
+        remain: int,
+        start: int,
+        path: List[int],
+        result: List[List[int]],
+    ) -> None:
+        if remain == 0:
+            result.append(path[:])
+            return
+        if remain < 0:
+            return
+
+        for i in range(start, len(candidates)):
+            path.append(candidates[i])
+            self.dfs(candidates, remain - candidates[i], i, path, result)
+            path.pop()
