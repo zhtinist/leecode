@@ -30,4 +30,10 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        pass
+        n = len(matrix)
+        backup = [row[:] for row in matrix]
+
+        for i in range(n):
+            for j in range(n):
+                # 顺时针 90°：(i, j) -> (j, n - 1 - i)
+                matrix[j][n - 1 - i] = backup[i][j]
