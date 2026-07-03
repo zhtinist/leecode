@@ -40,4 +40,30 @@ from typing import List
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        pass
+        n = len(nums)
+
+        # 循环数组：先找「断点」pivot（最小值下标，即旋转起点）
+        left, right = 0, n - 1
+        while left < right:
+            mid = (left + right) // 2
+            if nums[mid] > nums[right]:
+                left = mid + 1
+            else:
+                right = mid
+        pivot = left
+
+        # 展开后有两段有序区间：[pivot, n-1] 和 [0, pivot-1]
+        if target >= nums[pivot] and target <= nums[n - 1]:
+            return self._binary_search(nums, pivot, n - 1, target)
+        return self._binary_search(nums, 0, pivot - 1, target)
+
+    def _binary_search(self, nums: List[int], left: int, right: int, target: int) -> int:
+        while left <= right:
+            mid = (left + right) // 2
+            if nums[mid] == target:
+                return mid
+            if nums[mid] < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        return -1
