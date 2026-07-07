@@ -39,4 +39,28 @@ class Solution:
     def insert(
         self, intervals: List[List[int]], newInterval: List[int]
     ) -> List[List[int]]:
-        pass
+        result = []
+        i = 0
+        n = len(intervals)
+        start, end = newInterval
+
+        # 第一段：新区间左边的区间，完全在 newInterval 之前，不会重叠
+        # 条件：当前区间右端点 < 新区间左端点
+        while i < n and intervals[i][1] < start:
+            result.append(intervals[i])
+            i += 1
+
+        # 第二段：与新区间重叠的区间，全部合并进 newInterval
+        # 重叠条件：当前区间左端点 <= 已合并区间的右端点
+        while i < n and intervals[i][0] <= end:
+            start = min(start, intervals[i][0])   # 合并后取最小左端点
+            end = max(end, intervals[i][1])       # 合并后取最大右端点
+            i += 1
+        result.append([start, end])
+
+        # 第三段：新区间右边的区间，完全在 newInterval 之后
+        while i < n:
+            result.append(intervals[i])
+            i += 1
+
+        return result
