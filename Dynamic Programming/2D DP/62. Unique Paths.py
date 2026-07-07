@@ -31,6 +31,11 @@ Constraints:
 """
 
 
+import math
+
+
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        pass
+        # 共走 m+n-2 步：m-1 次下、n-1 次右
+        # 路径数 = 在这 m+n-2 步中选 m-1 步为「下」= C(m+n-2, m-1)
+        return math.comb(m + n - 2, m - 1)
