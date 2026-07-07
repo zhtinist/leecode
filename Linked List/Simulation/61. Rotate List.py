@@ -30,4 +30,26 @@ from typing import Optional
 
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        pass
+        if not head or not head.next:
+            return head
+
+        length = 1
+        tail = head
+        while tail.next:
+            tail = tail.next
+            length += 1
+
+        k %= length
+        if k == 0:
+            return head
+
+        steps = length - k
+        prev = head
+        for _ in range(steps - 1):
+            prev = prev.next
+
+        new_head = prev.next
+        prev.next = None
+        tail.next = head
+
+        return new_head
