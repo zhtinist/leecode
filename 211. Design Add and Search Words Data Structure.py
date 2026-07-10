@@ -1,5 +1,6 @@
 """
 LeetCode #211 - Design Add and Search Words Data Structure
+中文题名：添加与搜索单词 - 数据结构设计
 https://leetcode.com/problems/design-add-and-search-words-data-structure/
 
 Design a data structure that supports the following two operations:
@@ -23,6 +24,28 @@ search("b..") -> true
 Note:
 
 You may assume that all words are consist of lowercase letters `a-z`.
+
+【中文翻译】
+设计一个支持以下两种操作的数据结构：
+
+void addWord(word)
+bool search(word)
+
+search(word) 可以搜索一个只包含字母 `a-z` 或 `.` 的字符串。其中 `.` 可以表示任何一个字母。
+
+示例：
+
+addWord("bad")
+addWord("dad")
+addWord("mad")
+search("pad") -> false
+search("bad") -> true
+search(".ad") -> true
+search("b..") -> true
+
+注意：
+
+你可以假设所有单词都由小写字母 `a-z` 组成。
 """
 
 from typing import List, Optional

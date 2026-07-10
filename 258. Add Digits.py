@@ -1,5 +1,6 @@
 """
 LeetCode #258 - Add Digits
+中文题名：各位相加
 https://leetcode.com/problems/add-digits/
 
 Given a non-negative integer `num`, repeatedly add all its digits until the result
@@ -15,6 +16,20 @@ Since `2` has only one digit, return it.
 Follow up:
 
 Could you do it without any loop/recursion in O(1) runtime?
+
+【中文翻译】
+给定一个非负整数 `num`，反复将各位数字相加，直到结果变为一位数字。返回该结果。
+
+示例：
+
+输入：`38`
+输出：2
+解释：过程如下：`3 + 8 = 11`，`1 + 1 = 2`。
+由于 `2` 只有一位数字，返回它。
+
+进阶：
+
+你能否在 O(1) 时间复杂度内、不使用任何循环/递归完成此题？
 """
 
 from typing import List, Optional

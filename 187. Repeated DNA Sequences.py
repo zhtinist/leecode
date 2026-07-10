@@ -1,19 +1,27 @@
 """
 LeetCode #187 - Repeated DNA Sequences
+中文题名：重复的DNA序列
 https://leetcode.com/problems/repeated-dna-sequences/
 
-All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example:
-"ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated
-sequences within the DNA.
+All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for
+example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify
+repeated sequences within the DNA.
 
-Write a function to find all the 10-letter-long sequences (substrings) that occur more than
-once in a DNA molecule.
+Write a function to find all the 10-letter-long sequences (substrings) that occur
+more than once in a DNA molecule.
 
 Example:
+    Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+    Output: ["AAAAACCCCC", "CCCCCAAAAA"]
 
-Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+【中文翻译】
+DNA 由 A、C、G、T 四种核苷酸组成。研究 DNA 时，有时需要找出其中重复出现的序列。
 
-Output: ["AAAAACCCCC", "CCCCCAAAAA"]
+编写函数，找出所有在 DNA 分子中出现超过一次的、长度为 10 的序列（子串）。
+
+示例：
+    输入：s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+    输出：["AAAAACCCCC", "CCCCCAAAAA"]
 """
 
 from typing import List, Optional

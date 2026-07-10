@@ -1,5 +1,6 @@
 """
 LeetCode #207 - Course Schedule
+中文题名：课程表
 https://leetcode.com/problems/course-schedule/
 
 There are a total of *n* courses you have to take, labeled from `0` to `n-1`.
@@ -31,6 +32,31 @@ The input prerequisites is a graph represented by a list of edges, not adjacency
 matrices. Read more about how a graph is represented.
 
 You may assume that there are no duplicate edges in the input prerequisites.
+
+【中文翻译】
+你这个学期必须选修 *n* 门课程，记为 `0` 到 `n-1`。
+
+在选修某些课程之前需要一些先修课程。例如，想要学习课程 0，你需要先完成课程 1，我们用一个匹配来表示：[0,1]
+
+给定课程总量以及它们之间的先修关系，判断是否可能完成所有课程的学习？
+
+示例 1：
+
+输入：2, [[1,0]]
+输出：true
+解释：共有 2 门课程。学习课程 1 之前，你需要完成课程 0。所以这是可能的。
+
+示例 2：
+
+输入：2, [[1,0],[0,1]]
+输出：false
+解释：共有 2 门课程。学习课程 1 之前，你需要先完成课程 0；并且学习课程 0 之前，你还应先完成课程 1。所以这是不可能的。
+
+注意：
+
+输入的先修关系是用边列表表示的图，而不是邻接矩阵。请阅读更多关于图如何表示的内容。
+
+你可以假设输入的先修关系中没有重复的边。
 """
 
 from typing import List, Optional

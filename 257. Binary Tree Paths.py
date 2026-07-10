@@ -1,5 +1,6 @@
 """
 LeetCode #257 - Binary Tree Paths
+中文题名：二叉树的所有路径
 https://leetcode.com/problems/binary-tree-paths/
 
 Given a binary tree, return all root-to-leaf paths.
@@ -19,6 +20,25 @@ Input:
 Output: ["1->2->5", "1->3"]
 
 Explanation: All root-to-leaf paths are: 1->2->5, 1->3
+
+【中文翻译】
+给定一个二叉树，返回所有从根节点到叶子节点的路径。
+
+注意：叶子节点是指没有子节点的节点。
+
+示例：
+
+输入：
+
+1
+/   \
+2     3
+\
+5
+
+输出：["1->2->5", "1->3"]
+
+解释：所有根到叶的路径为：1->2->5, 1->3
 """
 
 from typing import List, Optional

@@ -1,24 +1,34 @@
 """
 LeetCode #186 - Reverse Words in a String II
+中文题名：翻转字符串里的单词 II
 https://leetcode.com/problems/reverse-words-in-a-string-ii/
 
-Given an input string* *, reverse the string word by word.
+Given an input string, reverse the string word by word.
 
 Example:
-
-Input:  ["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"]
-Output: ["b","l","u","e"," ","i","s"," ","s","k","y"," ","t","h","e"]
+    Input: s = ["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"]
+    Output: ["b","l","u","e"," ","i","s"," ","s","k","y"," ","t","h","e"]
 
 Note:
+    A word is defined as a sequence of non-space characters.
+    The input string does not contain leading or trailing spaces.
+    The words are always separated by a single space.
 
-A word is defined as a sequence of non-space characters.
+Follow up: Could you do it in-place without allocating extra space?
 
-The input string does not contain leading or trailing spaces.
+【中文翻译】
+给定一个字符数组，逐个翻转其中的每个单词。
 
-The words are always separated by a single space.
+示例：
+    输入：s = ["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"]
+    输出：["b","l","u","e"," ","i","s"," ","s","k","y"," ","t","h","e"]
 
-Follow up: Could you do it *in-place* without allocating extra
-space?
+注意：
+    - 单词定义为连续的非空格字符。
+    - 输入字符串不含前导或尾随空格。
+    - 单词之间始终只有一个空格。
+
+进阶：能否在不分配额外空间的情况下原地完成？
 """
 
 from typing import List, Optional

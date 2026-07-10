@@ -1,5 +1,6 @@
 """
 LeetCode #206 - Reverse Linked List
+中文题名：反转链表
 https://leetcode.com/problems/reverse-linked-list/
 
 Reverse a singly linked list.
@@ -13,6 +14,16 @@ Follow up:
 
 A linked list can be reversed either iteratively or recursively. Could you implement
 both?
+
+【中文翻译】
+反转一个单链表。
+
+示例：
+    输入：1->2->3->4->5->NULL
+    输出：5->4->3->2->1->NULL
+
+进阶：
+    链表可以迭代或递归地反转，你能否用两种方法实现？
 """
 
 from typing import List, Optional

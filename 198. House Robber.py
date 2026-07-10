@@ -1,5 +1,6 @@
 """
 LeetCode #198 - House Robber
+中文题名：打家劫舍
 https://leetcode.com/problems/house-robber/
 
 You are a professional robber planning to rob houses along a street. Each house has a certain
@@ -23,6 +24,22 @@ Input: [2,7,9,3,1]
 Output: 12
 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).
 Total amount you can rob = 2 + 9 + 1 = 12.
+
+【中文翻译】
+你是一个专业小偷，计划沿街房屋行窃。每间房内有一定现金，但相邻房屋装有联通防盗系统，
+当晚相邻两间房同时被窃会触发报警。
+
+给定非负整数数组表示每间房的金额，求在不触发报警的情况下今晚能窃得的最大金额。
+
+示例 1：
+    输入：nums = [1, 2, 3, 1]
+    输出：4
+    解释：窃第 1 间（1）和第 3 间（3），共 1 + 3 = 4。
+
+示例 2：
+    输入：nums = [2, 7, 9, 3, 1]
+    输出：12
+    解释：窃第 1 间（2）、第 3 间（9）、第 5 间（1），共 2 + 9 + 1 = 12。
 """
 
 from typing import List, Optional

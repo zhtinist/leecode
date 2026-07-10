@@ -1,5 +1,6 @@
 """
 LeetCode #232 - Implement Queue using Stacks
+中文题名：用栈实现队列
 https://leetcode.com/problems/implement-queue-using-stacks/
 
 Implement the following operations of a queue using stacks.
@@ -34,6 +35,35 @@ operations of a stack.
 
 You may assume that all operations are valid (for example, no pop or peek operations
 will be called on an empty queue).
+
+【中文翻译】
+使用栈实现队列的下列操作：
+
+push(x) -- 将一个元素放入队列的尾部。
+
+pop() -- 从队列首部移除元素。
+
+peek() -- 返回队列首部的元素。
+
+empty() -- 返回队列是否为空。
+
+示例：
+
+MyQueue queue = new MyQueue();
+
+queue.push(1);
+queue.push(2);
+queue.peek();  // 返回 1
+queue.pop();   // 返回 1
+queue.empty(); // 返回 false
+
+注意：
+
+你只能使用栈的标准操作——这意味着只有 `push to top`、`peek/pop from top`、`size` 和 `is empty` 操作是有效的。
+
+根据你的语言，栈可能没有原生支持。你可以使用 list 或 deque（双端队列）来模拟一个栈，只要你只使用栈的标准操作即可。
+
+你可以假设所有操作都是有效的（例如，不会对空队列调用 pop 或 peek 操作）。
 """
 
 from typing import List, Optional

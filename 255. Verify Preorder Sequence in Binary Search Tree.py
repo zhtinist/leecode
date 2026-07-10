@@ -1,5 +1,6 @@
 """
 LeetCode #255 - Verify Preorder Sequence in Binary Search Tree
+中文题名：验证二叉搜索树的前序遍历序列
 https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/
 
 Given an array of numbers, verify whether it is the correct preorder traversal sequence of a
@@ -28,6 +29,33 @@ Output: true
 Follow up:
 
 Could you do it using only constant space complexity?
+
+【中文翻译】
+给定一个整数数组，验证它是否是二叉搜索树（BST）的正确前序遍历序列。
+
+你可以假设数组中的数字是唯一的。
+
+考虑以下二叉搜索树：
+
+5
+/ \
+2   6
+/ \
+1   3
+
+示例 1：
+
+输入：[5,2,6,1,3]
+输出：false
+
+示例 2：
+
+输入：[5,2,1,3,6]
+输出：true
+
+进阶：
+
+你能否使用常数空间复杂度完成此题？
 """
 
 from typing import List, Optional

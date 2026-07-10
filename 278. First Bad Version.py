@@ -1,5 +1,6 @@
 """
 LeetCode #278 - First Bad Version
+中文题名：第一个错误的版本
 https://leetcode.com/problems/first-bad-version/
 
 You are a product manager and currently leading a team to develop a new product.
@@ -17,6 +18,23 @@ of calls to the API.
 Example:
 
 Given n = 5, and version = 4 is the first bad version.
+
+`call isBadVersion(3) -> false
+call isBadVersion(5) -> true
+call isBadVersion(4) -> true
+
+Then 4 is the first bad version. `
+
+【中文翻译】
+你是产品经理，正在带领一个团队开发新产品。不幸的是，产品的最新版本没有通过质量检测。由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错误的。
+
+假设你有 `n` 个版本 `[1, 2, ..., n]`，你想找出导致之后所有版本出错的第一个错误版本。
+
+你会得到一个 API `bool isBadVersion(version)`，它会返回 `version` 是否为错误版本。实现一个函数来找到第一个错误的版本。你应该尽量减少对 API 的调用次数。
+
+示例：
+
+给定 n = 5，且 version 4 是第一个错误版本。
 
 `call isBadVersion(3) -> false
 call isBadVersion(5) -> true

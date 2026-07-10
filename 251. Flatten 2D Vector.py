@@ -1,5 +1,6 @@
 """
 LeetCode #251 - Flatten 2D Vector
+中文题名：展开二维向量
 https://leetcode.com/problems/flatten-2d-vector/
 
 Design and implement an iterator to flatten a 2d vector. It should support the following
@@ -29,6 +30,31 @@ Follow up:
 
 As an added challenge, try to code it using only iterators
 in C++ or iterators in Java.
+
+【中文翻译】
+设计并实现一个迭代器来展开一个二维向量。它应该支持以下操作：`next` 和 `hasNext`。
+
+示例：
+
+Vector2D iterator = new Vector2D([[1,2],[3],[4]]);
+
+iterator.next(); // 返回 1
+iterator.next(); // 返回 2
+iterator.next(); // 返回 3
+iterator.hasNext(); // 返回 true
+iterator.hasNext(); // 返回 true
+iterator.next(); // 返回 4
+iterator.hasNext(); // 返回 false
+
+注意：
+
+请记得重置你在 Vector2D 中声明的类变量，因为静态/类变量会在多个测试用例之间持久存在。详见此处了解更多细节。
+
+你可以假设调用 `next()` 时总是有效的，也就是说，当调用 `next()` 时，二维向量中至少有一个下一个元素。
+
+进阶：
+
+作为额外挑战，尝试仅使用 C++ 中的迭代器或 Java 中的迭代器来实现。
 """
 
 from typing import List, Optional

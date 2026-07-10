@@ -1,5 +1,6 @@
 """
 LeetCode #277 - Find the Celebrity
+中文题名：搜寻名人
 https://leetcode.com/problems/find-the-celebrity/
 
 Suppose you are at a party with `n` people (labeled from `0` to `n
@@ -48,6 +49,43 @@ n` matrix where `a[i][j] = 1` means person `i` knows
 person `j` while `a[i][j] = 0` means the contrary.
 
 Remember that you won't have direct access to the adjacency matrix.
+
+【中文翻译】
+假设你正在参加一个 `n` 人的派对（标记为 `0` 到 `n - 1`），其中可能存在一位「名人」。名人的定义是：其他所有 `n - 1` 人都认识他/她，而他/她不认识任何其他人。
+
+现在你想找出谁是名人，或验证没有名人。你唯一允许的操作是向 A 提问：「你好，A，你认识 B 吗？」以获取 A 是否认识 B 的信息。你需要通过尽可能少的问题（在渐近意义上）找出名人（或验证没有名人）。
+
+你会得到一个辅助函数 `bool knows(a, b)`，它告诉你 A 是否认识 B。实现一个函数 `int findCelebrity(n)`。如果派对中有名人，则恰好有一位。如果存在名人，返回名人的编号；如果没有名人，返回 `-1`。
+
+示例 1：
+
+*
+
+输入：graph = [
+[1,1,0],
+[0,1,0],
+[1,1,1]
+]
+输出：1
+解释：有三个人标记为 0、1 和 2。graph[i][j] = 1 表示第 i 个人认识第 j 个人，否则 graph[i][j] = 0 表示不认识。名人是标记为 1 的人，因为 0 和 2 都认识他，但 1 不认识任何人。
+
+示例 2：
+
+*
+
+输入：graph = [
+[1,0,1],
+[1,1,0],
+[0,1,1]
+]
+输出：-1
+解释：没有名人。
+
+注意：
+
+有向图表示为邻接矩阵，这是一个 `n x n` 矩阵，其中 `a[i][j] = 1` 表示第 `i` 个人认识第 `j` 个人，而 `a[i][j] = 0` 表示相反。
+
+请记住，你无法直接访问邻接矩阵。
 """
 
 from typing import List, Optional

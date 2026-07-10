@@ -1,5 +1,6 @@
 """
 LeetCode #284 - Peeking Iterator
+中文题名：窥视迭代器
 https://leetcode.com/problems/peeking-iterator/
 
 Given an Iterator class interface with methods: `next()` and
@@ -18,6 +19,20 @@ Calling `hasNext()` after that should return false.
 
 Follow up: How would you extend your design to be generic and work with all types, not
 just integer?
+
+【中文翻译】
+给定一个 Iterator 类接口，包含方法：`next()` 和 `hasNext()`，设计并实现一个支持 `peek()` 操作的 PeekingIterator——它本质上是在 `next()` 调用返回的元素之前进行窥视。
+
+示例：
+
+假设迭代器初始化到列表开头：`[1,2,3]`。
+
+调用 `next()` 得到 1，列表中的第一个元素。
+现在调用 `peek()` 返回 2，即下一个元素。之后调用 `next()` *仍然* 返回 2。
+最后一次调用 `next()` 返回 3，即最后一个元素。
+之后调用 `hasNext()` 应返回 false。
+
+进阶：如何扩展你的设计使其通用，适用于所有类型，而不仅仅是整数？
 """
 
 from typing import List, Optional

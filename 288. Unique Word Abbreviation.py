@@ -1,5 +1,6 @@
 """
 LeetCode #288 - Unique Word Abbreviation
+中文题名：单词的唯一缩写
 https://leetcode.com/problems/unique-word-abbreviation/
 
 An abbreviation of a word follows the form <first letter><number><last letter>.
@@ -28,6 +29,36 @@ has the same abbreviation.
 Example:
 
 Given dictionary = [ "deer", "door", "cake", "card" ]
+
+isUnique("dear") -> `false`
+isUnique("cart") -> `true`
+isUnique("cane") -> `false`
+isUnique("make") -> `true`
+
+【中文翻译】
+单词的缩写遵循 <首字母><数字><尾字母> 的形式。以下是一些单词缩写的示例：
+
+a) it                      --> it    (无缩写)
+
+1
+↓
+b) d|o|g                   --> d1g
+
+1    1  1
+1---5----0----5--8
+↓   ↓    ↓    ↓  ↓
+c) i|nternationalizatio|n  --> i18n
+
+1
+1---5----0
+↓   ↓    ↓
+d) l|ocalizatio|n          --> l10n
+
+假设你有一个词典，给定一个单词，判断其缩写是否在词典中唯一。一个单词的缩写是唯一的，当且仅当词典中*没有*其他单词具有相同的缩写。
+
+示例：
+
+给定 dictionary = [ "deer", "door", "cake", "card" ]
 
 isUnique("dear") -> `false`
 isUnique("cart") -> `true`

@@ -1,5 +1,6 @@
 """
 LeetCode #298 - Binary Tree Longest Consecutive Sequence
+中文题名：二叉树最长连续序列
 https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/
 
 Given a binary tree, find the length of the longest consecutive sequence path.
@@ -39,6 +40,43 @@ Input:
 Output: 2
 
 Explanation: Longest consecutive sequence path is `2-3`, not `3-2-1`, so return `2`.
+
+【中文翻译】
+给定一个二叉树，找出最长连续序列路径的长度。
+
+路径指的是从某个起始节点到树中任意节点的序列，沿着父-子连接。最长连续路径需要从父节点到子节点（不能反向）。
+
+示例 1：
+
+输入：
+
+1
+\
+3
+/ \
+2   4
+\
+5
+
+输出：`3`
+
+解释：最长连续序列路径是 `3-4-5`，所以返回 `3`。
+
+示例 2：
+
+输入：
+
+2
+\
+3
+/
+2
+/
+1
+
+输出：2
+
+解释：最长连续序列路径是 `2-3`，而不是 `3-2-1`，所以返回 `2`。
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #250 - Count Univalue Subtrees
+中文题名：统计同值子树
 https://leetcode.com/problems/count-univalue-subtrees/
 
 Given a binary tree, count the number of uni-value subtrees.
@@ -17,6 +18,23 @@ Input:  root = [5,1,5,5,5,null,5]
 5   5   5
 
 Output: 4
+
+【中文翻译】
+给定一棵二叉树，统计并返回同值子树的数量。
+
+同值子树指所有节点都具有相同值的子树。
+
+示例：
+
+输入：root = [5,1,5,5,5,null,5]
+
+5
+/ \
+1   5
+/ \   \
+5   5   5
+
+输出：4
 """
 
 from typing import List, Optional

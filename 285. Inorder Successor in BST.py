@@ -1,5 +1,6 @@
 """
 LeetCode #285 - Inorder Successor in BST
+中文题名：二叉搜索树中的中序后继
 https://leetcode.com/problems/inorder-successor-in-bst/
 
 Given a binary search tree and a node in it, find the in-order successor of that node in the
@@ -29,6 +30,33 @@ Note:
 If the given node has no in-order successor in the tree, return `null`.
 
 It's guaranteed that the values of the tree are unique.
+
+【中文翻译】
+给定一棵二叉搜索树和一个树中的节点，找到该节点在 BST 中的中序后继。
+
+节点 `p` 的后继是键值大于 `p.val` 的最小键值的节点。
+
+示例 1：
+
+*
+
+输入：root = [2,1,3], p = 1
+输出：2
+解释：1 的中序后继节点是 2。注意 p 和返回值均为 TreeNode 类型。
+
+示例 2：
+
+*
+
+输入：root = [5,3,6,2,4,null,null,1], p = 6
+输出：null
+解释：当前节点没有中序后继，因此答案为 `null`。
+
+注意：
+
+如果给定节点在树中没有中序后继，返回 `null`。
+
+保证树中的值是唯一的。
 """
 
 from typing import List, Optional

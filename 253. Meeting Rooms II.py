@@ -1,5 +1,6 @@
 """
 LeetCode #253 - Meeting Rooms II
+中文题名：会议室 II
 https://leetcode.com/problems/meeting-rooms-ii/
 
 Given an array of meeting time intervals consisting of start and end times `[[s1,e1],[s2,e2],...]`
@@ -17,6 +18,21 @@ Output: 1
 
 NOTE: input types have been changed on April 15, 2019. Please reset to
 default code definition to get new method signature.
+
+【中文翻译】
+给定一个会议时间安排的数组，每个会议时间由开始时间和结束时间组成 `[[s1,e1],[s2,e2],...]`（s_i < e_i），求所需会议室的最小数量。
+
+示例 1：
+
+输入：`[[0, 30],[5, 10],[15, 20]]`
+输出：2
+
+示例 2：
+
+输入：[[7,10],[2,4]]
+输出：1
+
+注意：输入类型已于 2019 年 4 月 15 日更改。请重置为默认代码定义以获取新的方法签名。
 """
 
 from typing import List, Optional

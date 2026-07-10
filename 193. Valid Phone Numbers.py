@@ -1,5 +1,6 @@
 """
 LeetCode #193 - Valid Phone Numbers
+中文题名：有效电话号码
 https://leetcode.com/problems/valid-phone-numbers/
 
 Given a text file `file.txt` that contains list of phone numbers (one per line),
@@ -20,6 +21,27 @@ Assume that `file.txt` has the following content:
 (123) 456-7890
 
 Your script should output the following valid phone numbers:
+
+987-123-4567
+(123) 456-7890
+
+【中文翻译】
+给定一个包含电话号码列表（每行一个）的文本文件 `file.txt`，编写一行 bash 脚本打印所有有效的电话号码。
+
+你可以假设有效的电话号码必须采用以下两种格式之一：
+(xxx) xxx-xxxx 或 xxx-xxx-xxxx。（x 表示一位数字）
+
+你还可以假设文本文件中的每一行都不包含前导或尾随空格。
+
+示例：
+
+假设 `file.txt` 的内容如下：
+
+987-123-4567
+123 456 7890
+(123) 456-7890
+
+你的脚本应输出以下有效电话号码：
 
 987-123-4567
 (123) 456-7890

@@ -1,5 +1,6 @@
 """
 LeetCode #297 - Serialize and Deserialize Binary Tree
+中文题名：二叉树的序列化与反序列化
 https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 
 Serialization is the process of converting a data structure or object into a sequence of bits
@@ -29,6 +30,27 @@ different approaches yourself.
 
 Note: Do not use class member/global/static variables to store states.
 Your serialize and deserialize algorithms should be stateless.
+
+【中文翻译】
+序列化是将数据结构或对象转换为一系列比特的过程，以便它可以存储在文件或内存缓冲区中，或通过网络连接链接传输，以便稍后在相同或另一计算机环境中重建。
+
+设计一个算法来序列化和反序列化二叉树。对你的序列化/反序列化算法的工作方式没有限制。你只需要确保二叉树可以被序列化为字符串，并且该字符串可以被反序列化为原始树结构。
+
+示例：
+
+你可以序列化以下二叉树：
+
+1
+/ \
+2   3
+/ \
+4   5
+
+为 `"[1,2,3,null,null,4,5]"`
+
+说明：上述格式与 LeetCode 序列化二叉树的方式相同。你不一定需要遵循此格式，请发挥创意，提出不同的方法。
+
+注意：不要使用类成员/全局/静态变量来存储状态。你的 serialize 和 deserialize 算法应是无状态的。
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #205 - Isomorphic Strings
+中文题名：同构字符串
 https://leetcode.com/problems/isomorphic-strings/
 
 Given two strings *s* and *t*, determine if they are isomorphic.
@@ -28,6 +29,32 @@ Output: true
 Note:
 
 You may assume both *s *and *t *have the same length.
+
+【中文翻译】
+给定两个字符串 *s* 和 *t*，判断它们是否是同构的。
+
+如果 *s* 中的字符可以按某种映射关系替换得到 *t*，那么这两个字符串是同构的。
+
+每个出现的字符都应当映射到另一个字符，同时保持字符的顺序。所有字符都应当映射到另一个字符，且两个字符不能映射到同一个字符，但字符可以映射到自身。
+
+示例 1：
+
+输入：*s* = `"egg"`，*t* = `"add"`
+输出：true
+
+示例 2：
+
+输入：*s* = `"foo"`，*t* = `"bar"`
+输出：false
+
+示例 3：
+
+输入：*s* = `"paper"`，*t* = `"title"`
+输出：true
+
+注意：
+
+你可以假设 *s* 和 *t* 具有相同的长度。
 """
 
 from typing import List, Optional

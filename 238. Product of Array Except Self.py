@@ -1,5 +1,6 @@
 """
 LeetCode #238 - Product of Array Except Self
+中文题名：除自身以外数组的乘积
 https://leetcode.com/problems/product-of-array-except-self/
 
 Given an array `nums` of *n* integers where *n* > 1,  return
@@ -17,6 +18,20 @@ Follow up:
 
 Could you solve it with constant space complexity? (The output array does
 not count as extra space for the purpose of space complexity analysis.)
+
+【中文翻译】
+给你一个长度为 n 的整数数组 nums，其中 n > 1，返回一个数组 output，其中 output[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积。
+
+示例：
+
+输入：`[1,2,3,4]`
+输出：`[24,12,8,6]`
+
+注意：请不要使用除法，且在 O(n) 时间复杂度内完成此题。
+
+进阶：
+
+你可以在 O(1) 空间复杂度的条件下完成此题吗？（出于空间复杂度分析的目的，输出数组不被视为额外空间。）
 """
 
 from typing import List, Optional

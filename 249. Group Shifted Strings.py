@@ -1,5 +1,6 @@
 """
 LeetCode #249 - Group Shifted Strings
+中文题名：字母异位词分组
 https://leetcode.com/problems/group-shifted-strings/
 
 Given a string, we can "shift" each of its letter to its successive letter, for
@@ -15,6 +16,24 @@ Example:
 
 Input: `["abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"],`
 Output:
+[
+["abc","bcd","xyz"],
+["az","ba"],
+["acef"],
+["a","z"]
+]
+
+【中文翻译】
+给定一个字符串，我们可以将其中的每个字母依次向后移位，例如："abc" -> "bcd"。我们可以不断进行「移位」操作，形成如下序列：
+
+"abc" -> "bcd" -> ... -> "xyz"
+
+给定一个仅包含小写字母的字符串列表，将属于同一移位序列的所有字符串分组。
+
+示例：
+
+输入：`["abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"]`
+输出：
 [
 ["abc","bcd","xyz"],
 ["az","ba"],

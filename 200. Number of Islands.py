@@ -1,5 +1,6 @@
 """
 LeetCode #200 - Number of Islands
+中文题名：岛屿数量
 https://leetcode.com/problems/number-of-islands/
 
 Given a 2d grid map of `'1'`s (land) and `'0'`s
@@ -26,6 +27,26 @@ Input:
 00011
 
 Output: 3
+
+【中文翻译】
+给定二维网格，'1' 表示陆地，'0' 表示水域。统计岛屿数量。岛屿由水平或垂直相邻的陆地连接而成，
+可假设网格四边均被水包围。
+
+示例 1：
+    输入：
+    11110
+    11010
+    11000
+    00000
+    输出：1
+
+示例 2：
+    输入：
+    11000
+    11000
+    00100
+    00011
+    输出：3
 """
 
 from typing import List, Optional

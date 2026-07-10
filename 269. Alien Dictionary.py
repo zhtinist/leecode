@@ -1,5 +1,6 @@
 """
 LeetCode #269 - Alien Dictionary
+中文题名：火星词典
 https://leetcode.com/problems/alien-dictionary/
 
 There is a new alien language which uses the latin alphabet. However, the order among letters
@@ -53,6 +54,55 @@ dictionary.
 If the order is invalid, return an empty string.
 
 There may be multiple valid order of letters, return any one of them is fine.
+
+【中文翻译】
+有一种新的外星语言，使用拉丁字母，但字母的顺序未知。你会收到一个来自这种语言的词典的非空单词列表，单词按这种新语言的规则按字典序排序。推导该语言中字母的顺序。
+
+示例 1：
+
+输入：
+[
+"wrt",
+"wrf",
+"er",
+"ett",
+"rftt"
+]
+
+输出：`"wertf"`
+
+示例 2：
+
+输入：
+[
+"z",
+"x"
+]
+
+输出：`"zx"`
+
+示例 3：
+
+输入：
+[
+"z",
+"x",
+"z"
+]
+
+输出：`""`
+
+解释：顺序无效，因此返回 `""`。
+
+注意：
+
+你可以假设所有字母均为小写。
+
+你可以假设如果 a 是 b 的前缀，则 a 在词典中一定出现在 b 之前。
+
+如果顺序无效，返回空字符串。
+
+可能存在多种有效的字母顺序，返回其中任意一种即可。
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #261 - Graph Valid Tree
+中文题名：以图判树
 https://leetcode.com/problems/graph-valid-tree/
 
 Given `n` nodes labeled from `0` to `n-1` and a list of
@@ -19,6 +20,21 @@ Output: false
 Note: you can assume that no duplicate edges will appear in `edges`. Since
 all edges are undirected, `[0,1]` is the same as `[1,0]` and thus will
 not appear together in `edges`.
+
+【中文翻译】
+给定 `n` 个节点（从 `0` 到 `n-1` 标记）和一组无向边（每条边由一对节点表示），编写一个函数来检查这些边是否构成一棵有效的树。
+
+示例 1：
+
+输入：`n = 5`，且 `edges = [[0,1], [0,2], [0,3], [1,4]]`
+输出：true
+
+示例 2：
+
+输入：`n = 5`，且 `edges = [[0,1], [1,2], [2,3], [1,3], [1,4]]`
+输出：false
+
+注意：你可以假设 `edges` 中不会出现重复的边。由于所有边都是无向的，`[0,1]` 与 `[1,0]` 相同，因此不会同时出现在 `edges` 中。
 """
 
 from typing import List, Optional

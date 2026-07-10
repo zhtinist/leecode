@@ -1,5 +1,6 @@
 """
 LeetCode #222 - Count Complete Tree Nodes
+中文题名：完全二叉树的节点个数
 https://leetcode.com/problems/count-complete-tree-nodes/
 
 Given a complete binary tree, count the number of nodes.
@@ -22,6 +23,26 @@ Input:
 4  5 6
 
 Output: 6
+
+【中文翻译】
+给你一棵完全二叉树的根节点 root，求出该树的节点个数。
+
+注意：
+
+完全二叉树的定义来自维基百科：
+
+在完全二叉树中，除了最底层节点可能没填满外，其余每层节点数都达到最大值，并且最下面一层的节点都集中在该层最左边的若干位置。若最底层为第 h 层，则该层包含 1 到 2^h 个节点。
+
+示例：
+
+输入：
+1
+/ \
+2   3
+/ \  /
+4  5 6
+
+输出：6
 """
 
 from typing import List, Optional

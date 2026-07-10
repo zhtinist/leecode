@@ -1,5 +1,6 @@
 """
 LeetCode #227 - Basic Calculator II
+中文题名：基本计算器 II
 https://leetcode.com/problems/basic-calculator-ii/
 
 Implement a basic calculator to evaluate a simple expression string.
@@ -28,6 +29,32 @@ Note:
 You may assume that the given expression is always valid.
 
 Do not use the `eval` built-in library function.
+
+【中文翻译】
+实现一个基本的计算器来计算一个简单的字符串表达式的值。
+
+字符串表达式仅包含非负整数、`+`、`-`、`*`、`/` 运算符和空格 ` `。整数除法应截断向零取整。
+
+示例 1：
+
+输入："3+2*2"
+输出：7
+
+示例 2：
+
+输入：" 3/2 "
+输出：1
+
+示例 3：
+
+输入：" 3+5 / 2 "
+输出：5
+
+注意：
+
+你可以假设所给表达式是有效的。
+
+不要使用内置的 `eval` 库函数。
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #235 - Lowest Common Ancestor of a Binary Search Tree
+中文题名：二叉搜索树的最近公共祖先
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in
@@ -30,6 +31,33 @@ Note:
 All of the nodes' values will be unique.
 
 p and q are different and both values will exist in the BST.
+
+【中文翻译】
+给定一个二叉搜索树，找到该树中两个指定节点的最近公共祖先（LCA）。
+
+根据维基百科的定义：「最近公共祖先」是指对于有根树 T 的两个节点 p、q，在 T 上有公共祖先节点 x，且 x 是距离 p、q 最近的（即深度最大的）公共祖先节点。（一个节点也可以是它自己的祖先。）
+
+给定二叉搜索树：root = [6,2,8,0,4,7,9,null,null,3,5]
+
+*
+
+示例 1：
+
+输入：root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
+输出：6
+解释：节点 `2` 和 `8` 的最近公共祖先是 `6`。
+
+示例 2：
+
+输入：root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
+输出：2
+解释：节点 `2` 和 `4` 的最近公共祖先是 `2`，因为根据 LCA 的定义，一个节点可以是它自己的祖先。
+
+注意：
+
+所有节点的值都是唯一的。
+
+p 和 q 为不同节点且均存在于给定的 BST 中。
 """
 
 from typing import List, Optional

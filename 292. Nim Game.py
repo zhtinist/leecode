@@ -1,5 +1,6 @@
 """
 LeetCode #292 - Nim Game
+中文题名：Nim 游戏
 https://leetcode.com/problems/nim-game/
 
 You are playing the following Nim Game with your friend: There is a heap of stones on the
@@ -16,6 +17,18 @@ Output: false
 Explanation: If there are 4 stones in the heap, then you will never win the game;
 No matter 1, 2, or 3 stones you remove, the last stone will always be
 removed by your friend.
+
+【中文翻译】
+你和你的朋友一起玩 Nim 游戏：桌子上有一堆石头，每次你们轮流拿掉 1 到 3 块石头。拿掉最后一块石头的人获胜。
+
+你们都非常聪明，对游戏有最优策略。编写一个函数来判断，给定初始石头数，你是否能赢得游戏。
+
+示例：
+
+输入：`4`
+输出：false
+解释：如果堆中有 4 块石头，那么你永远不会赢得比赛；
+无论你拿走 1、2 还是 3 块石头，最后一块石头总是会被你的朋友拿走。
 """
 
 from typing import List, Optional

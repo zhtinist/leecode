@@ -1,5 +1,6 @@
 """
 LeetCode #274 - H-Index
+中文题名：H 指数
 https://leetcode.com/problems/h-index/
 
 Given an array of citations (each citation is a non-negative integer) of a researcher, write
@@ -21,6 +22,20 @@ two with no more than `3` citations each, her h-index is `3`.
 
 Note: If there are several possible values for *h*, the maximum
 one is taken as the h-index.
+
+【中文翻译】
+给定一位研究者论文被引用次数的数组（每个元素是非负整数），编写一个函数计算该研究者的 h 指数。
+
+根据维基百科上 h 指数的定义：「h 指数」是指一位科研人员的 h 指数是指他/她至少有 h 篇论文分别被引用了至少 h 次，且其余的 *N − h* 篇论文每篇被引用次数不超过 h 次。
+
+示例：
+
+输入：`citations = [3,0,6,1,5]`
+输出：3
+解释：`[3,0,6,1,5]` 表示该研究者有 `5` 篇论文，每篇分别被引用 `3, 0, 6, 1, 5` 次。
+由于该研究者有 `3` 篇论文至少被引用 `3` 次，其余两篇论文被引用次数不超过 `3` 次，所以其 h 指数为 `3`。
+
+注意：如果 h 有多种可能的值，h 指数取其中最大的作为 h 指数。
 """
 
 from typing import List, Optional

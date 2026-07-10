@@ -1,5 +1,6 @@
 """
 LeetCode #300 - Longest Increasing Subsequence
+中文题名：最长递增子序列
 https://leetcode.com/problems/longest-increasing-subsequence/
 
 Given an unsorted array of integers, find the length of longest increasing subsequence.
@@ -18,6 +19,23 @@ length.
 Your algorithm should run in O(*n^2*) complexity.
 
 Follow up: Could you improve it to O(*n* log *n*) time complexity?
+
+【中文翻译】
+给定一个未排序的整数数组，找到最长递增子序列的长度。
+
+示例：
+
+输入：`[10,9,2,5,3,7,101,18]`
+输出：4
+解释：最长递增子序列是 `[2,3,7,101]`，因此长度为 `4`。
+
+注意：
+
+可能存在多种最长递增子序列的组合，你只需要返回长度即可。
+
+你的算法的时间复杂度应为 O(n^2)。
+
+进阶：你能否将算法的时间复杂度优化到 O(n log n)？
 """
 
 from typing import List, Optional

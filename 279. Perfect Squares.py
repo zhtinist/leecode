@@ -1,5 +1,6 @@
 """
 LeetCode #279 - Perfect Squares
+中文题名：完全平方数
 https://leetcode.com/problems/perfect-squares/
 
 Given a positive integer *n*, find the least number of perfect square numbers (for
@@ -16,6 +17,21 @@ Example 2:
 Input: *n* = `13`
 Output: 2
 Explanation: `13 = 4 + 9.`
+
+【中文翻译】
+给定一个正整数 *n*，找到最少需要多少个完全平方数（例如 `1, 4, 9, 16, ...`）使其和等于 *n*。
+
+示例 1：
+
+输入：*n* = `12`
+输出：3
+解释：`12 = 4 + 4 + 4.`
+
+示例 2：
+
+输入：*n* = `13`
+输出：2
+解释：`13 = 4 + 9.`
 """
 
 from typing import List, Optional

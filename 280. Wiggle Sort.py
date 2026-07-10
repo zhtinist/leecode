@@ -1,5 +1,6 @@
 """
 LeetCode #280 - Wiggle Sort
+中文题名：摆动排序
 https://leetcode.com/problems/wiggle-sort/
 
 Given an unsorted array `nums`, reorder it in-place such that `nums[0]
@@ -9,6 +10,14 @@ Example:
 
 Input: `nums = [3,5,2,1,6,4]`
 Output: One possible answer is [3,5,1,6,2,4]
+
+【中文翻译】
+给定一个未排序的数组 `nums`，将其重新排列成 `nums[0] <= nums[1] >= nums[2] <= nums[3]...` 的形式。
+
+示例：
+
+输入：`nums = [3,5,2,1,6,4]`
+输出：一种可能的答案是 [3,5,1,6,2,4]
 """
 
 from typing import List, Optional

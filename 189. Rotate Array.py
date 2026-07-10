@@ -1,5 +1,6 @@
 """
 LeetCode #189 - Rotate Array
+中文题名：轮转数组
 https://leetcode.com/problems/rotate-array/
 
 Given an array, rotate the array to the right by *k* steps, where *k* is
@@ -28,6 +29,32 @@ Try to come up as many solutions as you can, there are at least 3 different ways
 solve this problem.
 
 Could you do it in-place with O(1) extra space?
+
+【中文翻译】
+给定一个数组，将数组中的元素向右轮转 k 个位置，其中 k 是非负数。
+
+示例 1：
+
+输入：`[1,2,3,4,5,6,7]` 且 *k* = 3
+输出：`[5,6,7,1,2,3,4]`
+解释：
+向右轮转 1 步：`[7,1,2,3,4,5,6]`
+向右轮转 2 步：`[6,7,1,2,3,4,5]`
+向右轮转 3 步：`[5,6,7,1,2,3,4]`
+
+示例 2：
+
+输入：`[-1,-100,3,99]` 且 *k* = 2
+输出：[3,99,-1,-100]
+解释：
+向右轮转 1 步：[99,-1,-100,3]
+向右轮转 2 步：[3,99,-1,-100]
+
+注意：
+
+尽量想出多种解法，至少有 3 种不同的方法可以解决此问题。
+
+能否使用 O(1) 额外空间的原地算法？
 """
 
 from typing import List, Optional

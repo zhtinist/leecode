@@ -1,5 +1,6 @@
 """
 LeetCode #259 - 3Sum Smaller
+中文题名：较小的三数之和
 https://leetcode.com/problems/3sum-smaller/
 
 Given an array of *n* integers *nums* and a *target*, find the number of index
@@ -16,6 +17,20 @@ Explanation: Because there are two triplets which sums are less than 2:
 
 Follow up:
 Could you solve it in *O*(*n*^2) runtime?
+
+【中文翻译】
+给定一个长度为 *n* 的整数数组 *nums* 和一个 *target*，找出满足 `0 <= i < j < k < n` 且 `nums[i] + nums[j] + nums[k] < target` 的下标三元组 `i, j, k` 的个数。
+
+示例：
+
+输入：*nums* = `[-2,0,1,3]`，且 *target* = 2
+输出：2
+解释：因为有两个三元组的和小于 2：
+[-2,0,1]
+[-2,0,3]
+
+进阶：
+你能否在 *O*(*n*^2) 时间复杂度内解决此题？
 """
 
 from typing import List, Optional

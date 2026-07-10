@@ -1,5 +1,6 @@
 """
 LeetCode #276 - Paint Fence
+中文题名：粉刷栅栏
 https://leetcode.com/problems/paint-fence/
 
 There is a fence with n posts, each post can be painted with one of the k colors.
@@ -27,6 +28,32 @@ post1  post2  post3
 4         c2     c1     c1
 5         c2     c1     c2
 6         c2     c2     c1
+
+【中文翻译】
+有 n 个栅栏桩，每个栅栏桩可以涂 k 种颜色之一。
+
+你需要涂色所有栅栏桩，使得最多两个相邻的栅栏桩颜色相同。
+
+返回所有可能的涂色方案数。
+
+注意：
+
+n 和 k 均为非负整数。
+
+示例：
+
+输入：n = 3, k = 2
+输出：6
+解释：设 c1 为颜色 1，c2 为颜色 2。所有可能的方案为：
+
+post1  post2  post3
+-----  -----  -----
+1      c1     c1     c2
+2      c1     c2     c1
+3      c1     c2     c2
+4      c2     c1     c1
+5      c2     c1     c2
+6      c2     c2     c1
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #218 - The Skyline Problem
+中文题名：天际线问题
 https://leetcode.com/problems/the-skyline-problem/
 
 A city's skyline is the outer contour of the silhouette formed by all the buildings in
@@ -43,6 +44,29 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 instance, `[...[2 3], [4 5], [7 5], [11 5], [12 7]...]` is not acceptable;
 the three lines of height 5 should be merged into one in the final output as such:
 `[...[2 3], [4 5], [12 7], ...]`
+
+【中文翻译】
+城市的 skyline 是从远处观看该城市所有建筑物形成的轮廓的外轮廓。现在假设你得到了一个城市的建筑物位置和高度，如图 A 所示，编写一个程序来输出这些建筑物共同形成的天际线，如图 B 所示。
+
+*   *
+
+每个建筑物的几何信息由一组三元组 `[Li, Ri, Hi]` 表示，其中 `Li` 和 `Ri` 分别是第 i 个建筑物左边缘和右边缘的 x 坐标，`Hi` 是其高度。保证 `0 <= Li, Ri <= INT_MAX`，`0 < Hi <= INT_MAX`，且 `Ri - Li > 0`。你可以假设所有建筑物都是在高度为 0 的绝对平坦表面上的完美矩形。
+
+例如，图 A 中所有建筑物的尺寸记录为：`[ [2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ]`。
+
+输出是一个「关键点」列表（图 B 中的红点），格式为 `[ [x1,y1], [x2, y2], [x3, y3], ... ]`，它唯一地定义了天际线。关键点是水平线段的左端点。请注意，最后一个关键点（最右侧建筑物的结束点）仅用于标记天际线的终止，其高度始终为零。此外，任何两个相邻建筑物之间的地面也应被视为天际线轮廓的一部分。
+
+例如，图 B 中的天际线应表示为：`[ [2 10], [3 15], [7 12], [12 0], [15 10], [20 8], [24, 0] ]`。
+
+说明：
+
+任何输入列表中的建筑物数量保证在 `[0, 10000]` 范围内。
+
+输入列表已按左 x 坐标 `Li` 升序排序。
+
+输出列表必须按 x 坐标排序。
+
+输出天际线中不得有连续相同高度的水平线。例如，`[...[2 3], [4 5], [7 5], [11 5], [12 7]...]` 是不可接受的；高度为 5 的三条线应在最终输出中合并为一条，例如：`[...[2 3], [4 5], [12 7], ...]`
 """
 
 from typing import List, Optional

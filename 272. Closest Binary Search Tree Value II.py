@@ -1,5 +1,6 @@
 """
 LeetCode #272 - Closest Binary Search Tree Value II
+中文题名：最接近的二叉搜索树值 II
 https://leetcode.com/problems/closest-binary-search-tree-value-ii/
 
 Given a non-empty binary search tree and a target value, find *k* values in the BST that
@@ -30,6 +31,33 @@ Follow up:
 
 Assume that the BST is balanced, could you solve it in less than *O*(*n*) runtime
 (where *n* = total nodes)?
+
+【中文翻译】
+给定一个非空二叉搜索树和一个目标值，在 BST 中找到 *k* 个最接近目标值的值。
+
+注意：
+
+给定的目标值是一个浮点数。
+
+你可以假设 *k* 始终有效，即：*k* <= 总节点数。
+
+你可以保证 BST 中只有唯一一组 *k* 个值最接近目标值。
+
+示例：
+
+输入：root = [4,2,5,1,3], target = 3.714286，且 *k* = 2
+
+4
+/ \
+2   5
+/ \
+1   3
+
+输出：[4,3]
+
+进阶：
+
+假设 BST 是平衡的，你能否在小于 *O*(*n*) 的时间复杂度内解决此题（其中 *n* = 总节点数）？
 """
 
 from typing import List, Optional

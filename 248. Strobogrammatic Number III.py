@@ -1,5 +1,6 @@
 """
 LeetCode #248 - Strobogrammatic Number III
+中文题名：中心对称数 III
 https://leetcode.com/problems/strobogrammatic-number-iii/
 
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at
@@ -18,6 +19,21 @@ Note:
 
 Because the range might be a large number, the *low* and *high* numbers are
 represented as string.
+
+【中文翻译】
+中心对称数是指一个数字在 180 度旋转（上下颠倒）后，看起来和原数字一样。
+
+编写一个函数来统计在范围 low <= num <= high 内，中心对称数的总数。
+
+示例：
+
+输入：low = "50", high = "100"
+输出：3
+解释：69、88 和 96 是三个中心对称数。
+
+注意：
+
+由于范围可能是一个很大的数，*low* 和 *high* 以字符串形式表示。
 """
 
 from typing import List, Optional

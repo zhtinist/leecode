@@ -1,5 +1,6 @@
 """
 LeetCode #282 - Expression Add Operators
+中文题名：给表达式添加运算符
 https://leetcode.com/problems/expression-add-operators/
 
 Given a string that contains only digits `0-9` and a target value, return all
@@ -30,6 +31,34 @@ Example 5:
 
 Input: `*num* = `"3456237490", *target* = 9191
 Output: []
+
+【中文翻译】
+给定一个仅包含数字 `0-9` 的字符串和一个目标值，返回所有可能在数字之间添加二元运算符（非一元）`+`、`-` 或 `*`，使得表达式等于目标值的所有可能。
+
+示例 1：
+
+输入：*num* = `"123"`，*target* = 6
+输出：["1+2+3", "1*2*3"]
+
+示例 2：
+
+输入：*num* = `"232"`，*target* = 8
+输出：["2*3+2", "2+3*2"]
+
+示例 3：
+
+输入：*num* = `"105"`，*target* = 5
+输出：["1*0+5","10-5"]
+
+示例 4：
+
+输入：*num* = `"00"`，*target* = 0
+输出：["0+0", "0-0", "0*0"]
+
+示例 5：
+
+输入：*num* = `"3456237490"`，*target* = 9191
+输出：[]
 """
 
 from typing import List, Optional

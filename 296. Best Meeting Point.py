@@ -1,5 +1,6 @@
 """
 LeetCode #296 - Best Meeting Point
+中文题名：最佳碰面地点
 https://leetcode.com/problems/best-meeting-point/
 
 A group of two or more people wants to meet and minimize the total travel distance. You are
@@ -22,6 +23,24 @@ Output: 6
 Explanation: Given three people living at `(0,0)`, `(0,4)`, and `(2,2)`:
 The point `(0,2)` is an ideal meeting point, as the total travel distance
 of 2+2+2=6 is minimal. So return 6.
+
+【中文翻译】
+给定一组二维网格，网格中的值 0 或 1 表示，其中每个 1 标记了组内某个人的家。距离使用曼哈顿距离计算，即 distance(p1, p2) = `|p2.x - p1.x| + |p2.y - p1.y|`。
+
+示例：
+
+输入：
+
+1 - 0 - 0 - 0 - 1
+|   |   |   |   |
+0 - 0 - 0 - 0 - 0
+|   |   |   |   |
+0 - 0 - 1 - 0 - 0
+
+输出：6
+
+解释：给定三个人分别住在 `(0,0)`、`(0,4)` 和 `(2,2)`：
+点 `(0,2)` 是理想的碰面地点，因为总旅行距离 2+2+2=6 最小。所以返回 6。
 """
 
 from typing import List, Optional

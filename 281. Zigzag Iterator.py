@@ -1,5 +1,6 @@
 """
 LeetCode #281 - Zigzag Iterator
+中文题名：锯齿迭代器
 https://leetcode.com/problems/zigzag-iterator/
 
 Given two 1d vectors, implement an iterator to return their elements alternately.
@@ -30,6 +31,32 @@ Input:
 [8,9]
 
 Output: `[1,4,8,2,5,9,3,6,7]`.
+
+【中文翻译】
+给定两个一维向量，实现一个迭代器，交替返回它们的元素。
+
+示例：
+
+输入：
+v1 = [1,2]
+v2 = [3,4,5,6]
+
+输出：`[1,3,2,4,5,6]`
+
+解释：通过反复调用 *next* 直到 *hasNext* 返回 `false`，*next* 返回的元素顺序应为：`[1,3,2,4,5,6]`。
+
+进阶：如果给你 `k` 个一维向量呢？你的代码如何扩展到这种情况？
+
+对进阶问题的说明：
+
+当 `k > 2` 时，「Zigzag」顺序没有明确定义且存在歧义。如果你觉得「Zigzag」不合适，可以用「Cyclic（循环）」替代。例如：
+
+输入：
+[1,2,3]
+[4,5,6,7]
+[8,9]
+
+输出：`[1,4,8,2,5,9,3,6,7]`。
 """
 
 from typing import List, Optional

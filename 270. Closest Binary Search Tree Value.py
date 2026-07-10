@@ -1,5 +1,6 @@
 """
 LeetCode #270 - Closest Binary Search Tree Value
+中文题名：最接近的二叉搜索树值
 https://leetcode.com/problems/closest-binary-search-tree-value/
 
 Given a non-empty binary search tree and a target value, find the value in the BST that is
@@ -23,6 +24,27 @@ Input: root = [4,2,5,1,3], target = 3.714286
 1   3
 
 Output: 4
+
+【中文翻译】
+给定一个非空二叉搜索树和一个目标值，在 BST 中找到最接近目标值的节点值。
+
+注意：
+
+给定的目标值是一个浮点数。
+
+你可以保证 BST 中只有一个值与目标值最接近。
+
+示例：
+
+输入：root = [4,2,5,1,3], target = 3.714286
+
+4
+/ \
+2   5
+/ \
+1   3
+
+输出：4
 """
 
 from typing import List, Optional

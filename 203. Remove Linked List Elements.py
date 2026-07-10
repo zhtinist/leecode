@@ -1,5 +1,6 @@
 """
 LeetCode #203 - Remove Linked List Elements
+中文题名：移除链表元素
 https://leetcode.com/problems/remove-linked-list-elements/
 
 Remove all elements from a linked list of integers that have value *val*.
@@ -8,6 +9,14 @@ Example:
 
 Input:  1->2->6->3->4->5->6, *val* = 6
 Output: 1->2->3->4->5
+
+【中文翻译】
+从链表中移除所有值等于 *val* 的节点。
+
+示例：
+
+输入：1->2->6->3->4->5->6，*val* = 6
+输出：1->2->3->4->5
 """
 
 from typing import List, Optional

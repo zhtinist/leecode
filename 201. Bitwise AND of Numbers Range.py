@@ -1,5 +1,6 @@
 """
 LeetCode #201 - Bitwise AND of Numbers Range
+中文题名：数字范围按位与
 https://leetcode.com/problems/bitwise-and-of-numbers-range/
 
 Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all
@@ -14,6 +15,19 @@ Example 2:
 
 Input: [0,1]
 Output: 0
+
+【中文翻译】
+给定范围 [m, n]，其中 0 <= m <= n <= 2147483647，返回此范围内所有数字（含 m 和 n）的按位与结果。
+
+示例 1：
+
+输入：[5,7]
+输出：4
+
+示例 2：
+
+输入：[0,1]
+输出：0
 """
 
 from typing import List, Optional

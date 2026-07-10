@@ -1,5 +1,6 @@
 """
 LeetCode #228 - Summary Ranges
+中文题名：汇总区间
 https://leetcode.com/problems/summary-ranges/
 
 Given a sorted integer array without duplicates, return the summary of its ranges.
@@ -15,6 +16,21 @@ Example 2:
 Input:  [0,2,3,4,6,8,9]
 Output: ["0","2->4","6","8->9"]
 Explanation: 2,3,4 form a continuous range; 8,9 form a continuous range.
+
+【中文翻译】
+给定一个无重复元素的有序整数数组，返回区间汇总摘要。
+
+示例 1：
+
+输入：[0,1,2,4,5,7]
+输出：["0->2","4->5","7"]
+解释：0,1,2 构成连续区间；4,5 构成连续区间。
+
+示例 2：
+
+输入：[0,2,3,4,6,8,9]
+输出：["0","2->4","6","8->9"]
+解释：2,3,4 构成连续区间；8,9 构成连续区间。
 """
 
 from typing import List, Optional

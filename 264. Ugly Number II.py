@@ -1,5 +1,6 @@
 """
 LeetCode #264 - Ugly Number II
+中文题名：丑数 II
 https://leetcode.com/problems/ugly-number-ii/
 
 Write a program to find the `n`-th ugly number.
@@ -18,6 +19,23 @@ Note:
 `1` is typically treated as an ugly number.
 
 `n` does not exceed 1690.
+
+【中文翻译】
+编写一个程序，找出第 `n` 个丑数。
+
+丑数就是只包含质因数 `2, 3, 5` 的正整数。
+
+示例：
+
+输入：n = 10
+输出：12
+解释：`1, 2, 3, 4, 5, 6, 8, 9, 10, 12` 是前 `10` 个丑数的序列。
+
+注意：
+
+`1` 通常被视为丑数。
+
+`n` 不超过 1690。
 """
 
 from typing import List, Optional

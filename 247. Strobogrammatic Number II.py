@@ -1,5 +1,6 @@
 """
 LeetCode #247 - Strobogrammatic Number II
+中文题名：中心对称数 II
 https://leetcode.com/problems/strobogrammatic-number-ii/
 
 A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at
@@ -11,6 +12,16 @@ Example:
 
 Input:  n = 2
 Output: `["11","69","88","96"]`
+
+【中文翻译】
+中心对称数是指一个数字在 180 度旋转（上下颠倒）后，看起来和原数字一样。
+
+找出所有长度为 n 的中心对称数。
+
+示例：
+
+输入：n = 2
+输出：`["11","69","88","96"]`
 """
 
 from typing import List, Optional

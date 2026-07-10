@@ -1,5 +1,6 @@
 """
 LeetCode #220 - Contains Duplicate III
+中文题名：存在重复元素 III
 https://leetcode.com/problems/contains-duplicate-iii/
 
 Given an array of integers, find out whether there are two distinct indices *i* and
@@ -19,8 +20,25 @@ Output: true
 
 Example 3:
 
-Input: nums = [1,5,9,1,5,9], k = 2, t = 3
 Output: false
+
+【中文翻译】
+给你一个整数数组 nums 和两个整数 k 和 t。判断是否存在两个不同的索引 i 和 j，使得 abs(nums[i] - nums[j]) <= t，同时又满足 abs(i - j) <= k。
+
+示例 1：
+
+输入：nums = [1,2,3,1], k = 3, t = 0
+输出：true
+
+示例 2：
+
+输入：nums = [1,0,1,1], k = 1, t = 2
+输出：true
+
+示例 3：
+
+输入：nums = [1,5,9,1,5,9], k = 2, t = 3
+输出：false
 """
 
 from typing import List, Optional

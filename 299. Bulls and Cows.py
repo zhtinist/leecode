@@ -1,5 +1,6 @@
 """
 LeetCode #299 - Bulls and Cows
+中文题名：猜数字游戏
 https://leetcode.com/problems/bulls-and-cows/
 
 You are playing the following Bulls and Cows game with your friend:
@@ -32,6 +33,31 @@ Explanation: The 1st `1 `in friend's guess is a bull, the 2nd or 3rd `1` is a co
 
 Note: You may assume that the secret number and your friend's guess only
 contain digits, and their lengths are always equal.
+
+【中文翻译】
+你正在和你的朋友玩 Bulls and Cows（猜数字）游戏。你写出一个数字，让你的朋友猜。每次朋友猜测时，你会给出一个提示，告诉朋友猜测的数字中有多少位数字和位置都完全匹配（称为「Bulls，公牛」），有多少位数字匹配但位置错误（称为「Cows，母牛」）。朋友会根据连续的猜测和提示最终猜出秘密数字。
+
+编写一个函数，根据秘密数字和朋友的猜测，返回提示。用 `A` 表示 Bulls，用 `B` 表示 Cows。
+
+请注意，秘密数字和朋友的猜测都可能包含重复数字。
+
+示例 1：
+
+输入：secret = "1807", guess = "7810"
+
+输出："1A3B"
+
+解释：`1` 个 Bulls 和 `3` 个 Cows。Bulls 是 `8`，Cows 是 `0`、`1` 和 `7`。
+
+示例 2：
+
+输入：secret = "1123", guess = "0111"
+
+输出："1A1B"
+
+解释：朋友猜测中第 1 个 `1` 是 Bulls，第 2 个或第 3 个 `1` 是 Cows。
+
+注意：你可以假设秘密数字和朋友的猜测只包含数字，且长度始终相等。
 """
 
 from typing import List, Optional

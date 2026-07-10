@@ -1,5 +1,6 @@
 """
 LeetCode #267 - Palindrome Permutation II
+中文题名：回文排列 II
 https://leetcode.com/problems/palindrome-permutation-ii/
 
 Given a string `s`, return all the palindromic permutations (without duplicates)
@@ -14,6 +15,19 @@ Example 2:
 
 Input: `"abc"`
 Output: `[]`
+
+【中文翻译】
+给定一个字符串 `s`，返回其所有可能的回文排列（不含重复）。如果无法形成任何回文排列，返回空列表。
+
+示例 1：
+
+输入：`"aabb"`
+输出：`["abba", "baab"]`
+
+示例 2：
+
+输入：`"abc"`
+输出：`[]`
 """
 
 from typing import List, Optional

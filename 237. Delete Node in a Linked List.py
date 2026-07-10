@@ -1,5 +1,6 @@
 """
 LeetCode #237 - Delete Node in a Linked List
+中文题名：删除链表中的节点
 https://leetcode.com/problems/delete-node-in-a-linked-list/
 
 Write a function to delete a node (except the tail) in a singly linked list, given only
@@ -33,6 +34,37 @@ The given node will not be the tail and it will always be a valid node of the
 linked list.
 
 Do not return anything from your function.
+
+【中文翻译】
+请编写一个函数，用于删除单链表中某个特定节点。你只能访问该节点而无法访问头节点。
+
+给定链表 — head = [4,5,1,9]，如下所示：
+
+示例 1：
+
+*
+
+输入：head = [4,5,1,9], node = 5
+输出：[4,1,9]
+解释：给定第二个节点（值为 5），调用函数后链表变为 4 -> 1 -> 9。
+
+示例 2：
+
+*
+
+输入：head = [4,5,1,9], node = 1
+输出：[4,5,9]
+解释：给定第三个节点（值为 1），调用函数后链表变为 4 -> 5 -> 9。
+
+注意：
+
+链表至少包含两个节点。
+
+所有节点的值都是唯一的。
+
+给定的节点不为链表尾部且一定是链表中的一个有效节点。
+
+不要从你的函数中返回任何内容。
 """
 
 from typing import List, Optional

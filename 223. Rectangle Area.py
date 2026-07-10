@@ -1,5 +1,6 @@
 """
 LeetCode #223 - Rectangle Area
+中文题名：矩形面积
 https://leetcode.com/problems/rectangle-area/
 
 Find the total area covered by two rectilinear rectangles in a
@@ -18,6 +19,22 @@ Output: 45
 Note:
 
 Assume that the total area is never beyond the maximum possible value of int.
+
+【中文翻译】
+在二维平面上计算两个由直线构成的矩形重叠后形成的总面积。
+
+每个矩形由其左下顶点和右上顶点坐标表示，如图所示。
+
+*
+
+示例：
+
+输入：A = -3, B = 0, C = 3, D = 4, E = 0, F = -1, G = 9, H = 2
+输出：45
+
+注意：
+
+假设总面积不会超过 int 的最大可能值。
 """
 
 from typing import List, Optional

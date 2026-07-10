@@ -1,5 +1,6 @@
 """
 LeetCode #266 - Palindrome Permutation
+中文题名：回文排列
 https://leetcode.com/problems/palindrome-permutation/
 
 Given a string, determine if a permutation of the string could form a palindrome.
@@ -16,8 +17,25 @@ Output: true
 
 Example 3:
 
-Input: `"carerac"`
 Output: true
+
+【中文翻译】
+给定一个字符串，判断其字符能否重新排列形成回文串。
+
+示例 1：
+
+输入：`"code"`
+输出：false
+
+示例 2：
+
+输入：`"aab"`
+输出：true
+
+示例 3：
+
+输入：`"carerac"`
+输出：true
 """
 
 from typing import List, Optional

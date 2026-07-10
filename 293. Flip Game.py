@@ -1,5 +1,6 @@
 """
 LeetCode #293 - Flip Game
+中文题名：翻转游戏
 https://leetcode.com/problems/flip-game/
 
 You are playing the following Flip Game with your friend: Given a string that contains only
@@ -21,6 +22,24 @@ Output:
 ]
 
 Note: If there is no valid move, return an empty list `[]`.
+
+【中文翻译】
+你和你的朋友正在玩以下翻转游戏：给定一个只包含 `+` 和 `-` 两种字符的字符串，你和你的朋友轮流将两个连续的 `"++"` 翻转为 `"--"`。
+当某人无法再进行移动时，游戏结束，另一人获胜。
+
+编写一个函数，计算在一次有效移动后字符串的所有可能状态。
+
+示例：
+
+输入：`s = "++++"`
+输出：
+[
+"--++",
+"+--+",
+"++--"
+]
+
+注意：如果没有有效移动，返回空列表 `[]`。
 """
 
 from typing import List, Optional

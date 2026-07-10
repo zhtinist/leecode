@@ -1,5 +1,6 @@
 """
 LeetCode #229 - Majority Element II
+中文题名：多数元素 II
 https://leetcode.com/problems/majority-element-ii/
 
 Given an integer array of size *n*, find all elements that appear more than `&lfloor;
@@ -16,6 +17,21 @@ Example 2:
 
 Input: [1,1,1,3,3,2,2,2]
 Output: [1,2]
+
+【中文翻译】
+给定一个大小为 *n* 的整数数组，找出其中所有出现超过 `⌊ n/3 ⌋` 次的元素。
+
+注意：算法的时间复杂度应为 O(n)，空间复杂度为 O(1)。
+
+示例 1：
+
+输入：[3,2,3]
+输出：[3]
+
+示例 2：
+
+输入：[1,1,1,3,3,2,2,2]
+输出：[1,2]
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #271 - Encode and Decode Strings
+中文题名：字符串的编码与解码
 https://leetcode.com/problems/encode-and-decode-strings/
 
 Design an algorithm to encode a list of strings to a string. The encoded string
@@ -41,6 +42,43 @@ algorithms should be stateless.
 
 Do not rely on any library method such as `eval` or serialize methods. You
 should implement your own encode/decode algorithm.
+
+【中文翻译】
+设计一个算法，将字符串列表编码为一个字符串。编码后的字符串通过网络传输，并在接收端解码为原始的字符串列表。
+
+机器 1（发送方）有函数：
+
+string encode(vector<string> strs) {
+// ... your code
+return encoded_string;
+}
+
+机器 2（接收方）有函数：
+
+vector<string> decode(string s) {
+//... your code
+return strs;
+}
+
+因此机器 1 执行：
+
+string encoded_string = encode(strs);
+
+机器 2 执行：
+
+vector<string> strs2 = decode(encoded_string);
+
+机器 2 中的 `strs2` 应与机器 1 中的 `strs` 相同。
+
+实现 `encode` 和 `decode` 方法。
+
+注意：
+
+字符串可能包含 256 种有效 ASCII 字符中的任意字符。你的算法应足够通用，能处理任何可能的字符。
+
+不要使用类成员/全局/静态变量来存储状态。你的 encode 和 decode 算法应是无状态的。
+
+不要依赖任何库方法，如 `eval` 或 serialize 方法。你应该实现自己的 encode/decode 算法。
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #192 - Word Frequency
+中文题名：单词频次
 https://leetcode.com/problems/word-frequency/
 
 Write a bash script to calculate the frequency of each word in a text file
@@ -34,6 +35,37 @@ Don't worry about handling ties, it is guaranteed that each word's frequency
 count is unique.
 
 Could you write it in one-line using Unix pipes?
+
+【中文翻译】
+编写一个 bash 脚本，统计文本文件 `words.txt` 中每个单词出现的频率。
+
+为简单起见，你可以假设：
+
+`words.txt` 只包含小写字符和空格 `' '` 字符。
+
+每个单词必须仅由小写字符组成。
+
+单词之间由一个或多个空白字符分隔。
+
+示例：
+
+假设 `words.txt` 的内容如下：
+
+the day is sunny the the
+the sunny is is
+
+你的脚本应输出以下内容，按频率降序排列：
+
+the 4
+is 3
+sunny 2
+day 1
+
+注意：
+
+无需处理频率相同的情况，题目保证每个单词的频率计数是唯一的。
+
+能否使用 Unix 管道用一行命令完成？
 """
 
 from typing import List, Optional

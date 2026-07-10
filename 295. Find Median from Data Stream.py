@@ -1,5 +1,6 @@
 """
 LeetCode #295 - Find Median from Data Stream
+中文题名：数据流的中位数
 https://leetcode.com/problems/find-median-from-data-stream/
 
 Median is the middle value in an ordered integer list. If the size of the list is even, there
@@ -33,6 +34,35 @@ optimize it?
 
 If 99% of all integer numbers from the stream are between 0 and 100, how would you
 optimize it?
+
+【中文翻译】
+中位数是有序整数列表中的中间值。如果列表大小是偶数，则没有中间值，中位数是中间两个值的平均值。
+
+例如，
+
+`[2,3,4]`，中位数是 `3`
+
+`[2,3]`，中位数是 `(2 + 3) / 2 = 2.5`
+
+设计一个数据结构，支持以下两种操作：
+
+void addNum(int num) - 从数据流中添加一个整数到数据结构中。
+
+double findMedian() - 返回到目前为止所有元素的中位数。
+
+示例：
+
+addNum(1)
+addNum(2)
+findMedian() -> 1.5
+addNum(3)
+findMedian() -> 2
+
+进阶：
+
+如果数据流中的所有整数都在 0 到 100 之间，你将如何优化？
+
+如果数据流中 99% 的整数都在 0 到 100 之间，你将如何优化？
 """
 
 from typing import List, Optional

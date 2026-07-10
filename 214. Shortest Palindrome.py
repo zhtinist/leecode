@@ -1,5 +1,6 @@
 """
 LeetCode #214 - Shortest Palindrome
+中文题名：最短回文串
 https://leetcode.com/problems/shortest-palindrome/
 
 Given a string *s*, you are allowed to convert it to a palindrome by adding
@@ -15,6 +16,19 @@ Example 2:
 
 Input: `"abcd"`
 Output: `"dcbabcd"`
+
+【中文翻译】
+给定一个字符串 *s*，你可以通过在字符串前面添加字符来将其转换为回文串。找到并返回可以用这种方式转换的最短回文串。
+
+示例 1：
+
+输入：`"aacecaaa"`
+输出：`"aaacecaaa"`
+
+示例 2：
+
+输入：`"abcd"`
+输出：`"dcbabcd"`
 """
 
 from typing import List, Optional

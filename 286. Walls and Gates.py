@@ -1,5 +1,6 @@
 """
 LeetCode #286 - Walls and Gates
+中文题名：墙与门
 https://leetcode.com/problems/walls-and-gates/
 
 You are given a *m x n* 2D grid initialized with these three possible values.
@@ -25,6 +26,33 @@ INF  -1 INF  -1
 0  -1 INF INF
 
 After running your function, the 2D grid should be:
+
+3  -1   0   1
+2   2   1  -1
+1  -1   2  -1
+0  -1   3   4
+
+【中文翻译】
+你被给定一个 *m x n* 的二维网格，初始化为以下三种可能的值之一。
+
+`-1` - 墙或障碍物。
+
+`0` - 门。
+
+`INF` - 无穷大表示空房间。我们使用值 `2^31 - 1 = 2147483647` 表示 `INF`，因为你可以假设到门的距离小于 `2147483647`。
+
+将每个空房间填充为到*最近*门的距离。如果无法到达门，则填充 `INF`。
+
+示例：
+
+给定 2D 网格：
+
+INF  -1  0  INF
+INF INF INF  -1
+INF  -1 INF  -1
+0  -1 INF INF
+
+运行函数后，2D 网格应为：
 
 3  -1   0   1
 2   2   1  -1

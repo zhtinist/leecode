@@ -1,5 +1,6 @@
 """
 LeetCode #268 - Missing Number
+中文题名：丢失的数字
 https://leetcode.com/problems/missing-number/
 
 Given an array containing *n* distinct numbers taken from `0, 1, 2, ..., n`,
@@ -19,6 +20,23 @@ Note:
 
 Your algorithm should run in linear runtime complexity. Could you implement it using only
 constant extra space complexity?
+
+【中文翻译】
+给定一个包含 *n* 个不同数字（取自 `0, 1, 2, ..., n`）的数组，找出数组中缺失的那个数。
+
+示例 1：
+
+输入：[3,0,1]
+输出：2
+
+示例 2：
+
+输入：[9,6,4,2,3,5,7,0,1]
+输出：8
+
+注意：
+
+你的算法应具有线性时间复杂度。你能否仅使用常数额外空间复杂度来实现？
 """
 
 from typing import List, Optional

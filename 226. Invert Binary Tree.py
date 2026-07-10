@@ -1,5 +1,6 @@
 """
 LeetCode #226 - Invert Binary Tree
+中文题名：翻转二叉树
 https://leetcode.com/problems/invert-binary-tree/
 
 Invert a binary tree.
@@ -28,6 +29,33 @@ This problem was inspired by this original tweet by Max Howell:
 
 Google: 90% of our engineers use the software you wrote (Homebrew), but you can't
 invert a binary tree on a whiteboard so f*** off.
+
+【中文翻译】
+翻转一棵二叉树。
+
+示例：
+
+输入：
+
+4
+/   \
+2     7
+/ \   / \
+1   3 6   9
+
+输出：
+
+4
+/   \
+7     2
+/ \   / \
+9   6 3   1
+
+趣闻：
+
+此问题受到 Max Howell 的这条推文的启发：
+
+Google：90% 的工程师都在使用你写的软件（Homebrew），但你在白板上都写不出翻转二叉树，所以滚蛋吧。
 """
 
 from typing import List, Optional

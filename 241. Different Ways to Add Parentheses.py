@@ -1,5 +1,6 @@
 """
 LeetCode #241 - Different Ways to Add Parentheses
+中文题名：为运算表达式设计优先级
 https://leetcode.com/problems/different-ways-to-add-parentheses/
 
 Given a string of numbers and operators, return all possible results from computing all the
@@ -19,6 +20,30 @@ Example 2:
 Input: `"2*3-4*5"`
 Output: `[-34, -14, -10, -10, 10]`
 Explanation:
+(2*(3-(4*5))) = -34
+((2*3)-(4*5)) = -14
+((2*(3-4))*5) = -10
+(2*((3-4)*5)) = -10
+(((2*3)-4)*5) = 10
+
+【中文翻译】
+给定一个含有数字和运算符的字符串表达式，返回所有可能通过添加括号来改变运算优先级后的计算结果。
+
+有效的运算符为 `+`、`-` 和 `*`。
+
+示例 1：
+
+输入：`"2-1-1"`
+输出：`[0, 2]`
+解释：
+((2-1)-1) = 0
+(2-(1-1)) = 2
+
+示例 2：
+
+输入：`"2*3-4*5"`
+输出：`[-34, -14, -10, -10, 10]`
+解释：
 (2*(3-(4*5))) = -34
 ((2*3)-(4*5)) = -14
 ((2*(3-4))*5) = -10

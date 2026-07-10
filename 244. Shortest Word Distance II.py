@@ -1,5 +1,6 @@
 """
 LeetCode #244 - Shortest Word Distance II
+中文题名：最短单词距离 II
 https://leetcode.com/problems/shortest-word-distance-ii/
 
 Design a class which receives a list of words in the constructor, and implements a method
@@ -22,6 +23,23 @@ Note:
 
 You may assume that *word1* does not equal to *word2*, and
 *word1* and *word2* are both in the list.
+
+【中文翻译】
+设计一个类，在构造函数中接收一个单词列表，并实现一个方法，该方法接收两个单词 *word1* 和 *word2*，并返回列表中这两个单词之间的最短距离。你的方法将被*反复*调用，参数不同。
+
+示例：
+
+假设 words = `["practice", "makes", "perfect", "coding", "makes"]`。
+
+输入：*word1* = `"coding"`，*word2* = `"practice"`
+输出：3
+
+输入：*word1* = `"makes"`，*word2* = `"coding"`
+输出：1
+
+注意：
+
+你可以假设 *word1* 不等于 *word2*，且 *word1* 和 *word2* 都在列表中。
 """
 
 from typing import List, Optional

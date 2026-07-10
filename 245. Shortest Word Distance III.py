@@ -1,5 +1,6 @@
 """
 LeetCode #245 - Shortest Word Distance III
+中文题名：最短单词距离 III
 https://leetcode.com/problems/shortest-word-distance-iii/
 
 Given a list of words and two words *word1* and *word2*, return the shortest
@@ -22,6 +23,25 @@ Output: 3
 Note:
 
 You may assume *word1* and *word2* are both in the list.
+
+【中文翻译】
+给定一个单词列表和两个单词 *word1* 和 *word2*，返回列表中这两个单词之间的最短距离。
+
+*word1* 和 *word2* 可能相同，它们代表列表中的两个独立单词。
+
+示例：
+
+假设 words = `["practice", "makes", "perfect", "coding", "makes"]`。
+
+输入：*word1* = `"makes"`，*word2* = `"coding"`
+输出：1
+
+输入：*word1* = `"makes"`，*word2* = `"makes"`
+输出：3
+
+注意：
+
+你可以假设 *word1* 和 *word2* 都在列表中。
 """
 
 from typing import List, Optional

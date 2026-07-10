@@ -1,30 +1,41 @@
 """
 LeetCode #188 - Best Time to Buy and Sell Stock IV
+中文题名：买卖股票的最佳时机 IV
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 
-Say you have an array for which the *i-*th element is the price of a given stock on
-day *i*.
+Say you have an array for which the i-th element is the price of a given stock on day i.
 
-Design an algorithm to find the maximum profit. You may complete at most k
-transactions.
+Design an algorithm to find the maximum profit. You may complete at most k transactions.
 
-Note:
-
-You may not engage in multiple transactions at the same time (ie, you must sell the stock
-before you buy again).
+Note: You may not engage in multiple transactions at the same time (i.e., you must sell
+the stock before you buy again).
 
 Example 1:
-
-Input: [2,4,1], k = 2
-Output: 2
-Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.
+    Input: prices = [2, 4, 1], k = 2
+    Output: 2
+    Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.
 
 Example 2:
+    Input: prices = [3, 2, 6, 5, 0, 3], k = 2
+    Output: 7
+    Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4.
+    Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
 
-Input: [3,2,6,5,0,3], k = 2
-Output: 7
-Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4.
-Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+【中文翻译】
+给定一个数组，第 i 个元素表示第 i 天的股票价格。设计算法求最大利润，最多可完成 k 笔交易。
+
+注意：同一时刻最多只能持有一股股票，即卖出后才能再次买入。
+
+示例 1：
+    输入：prices = [2, 4, 1], k = 2
+    输出：2
+    解释：第 1 天买入（价格 2），第 2 天卖出（价格 4），利润 4 - 2 = 2。
+
+示例 2：
+    输入：prices = [3, 2, 6, 5, 0, 3], k = 2
+    输出：7
+    解释：第 2 天买入（价格 2），第 3 天卖出（价格 6），利润 4；
+          第 5 天买入（价格 0），第 6 天卖出（价格 3），利润 3。
 """
 
 from typing import List, Optional

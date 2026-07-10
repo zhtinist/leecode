@@ -1,5 +1,6 @@
 """
 LeetCode #283 - Move Zeroes
+中文题名：移动零
 https://leetcode.com/problems/move-zeroes/
 
 Given an array `nums`, write a function to move all `0`'s to the
@@ -15,6 +16,20 @@ Note:
 You must do this in-place without making a copy of the array.
 
 Minimize the total number of operations.
+
+【中文翻译】
+给定一个数组 `nums`，编写一个函数将所有 `0` 移动到数组的末尾，同时保持非零元素的相对顺序。
+
+示例：
+
+输入：`[0,1,0,3,12]`
+输出：`[1,3,12,0,0]`
+
+注意：
+
+你必须在不复制数组的情况下原地操作。
+
+尽量减少操作总数。
 """
 
 from typing import List, Optional

@@ -1,5 +1,6 @@
 """
 LeetCode #294 - Flip Game II
+中文题名：翻转游戏 II
 https://leetcode.com/problems/flip-game-ii/
 
 You are playing the following Flip Game with your friend: Given a string that contains only
@@ -19,6 +20,22 @@ Explanation: The starting player can guarantee a win by flipping the middle `"++
 Follow up:
 
 Derive your algorithm's runtime complexity.
+
+【中文翻译】
+你和你的朋友正在玩以下翻转游戏：给定一个只包含 `+` 和 `-` 两种字符的字符串，你和你的朋友轮流将两个连续的 `"++"` 翻转为 `"--"`。
+当某人无法再进行移动时，游戏结束，另一人获胜。
+
+编写一个函数，判断先手玩家是否能保证获胜。
+
+示例：
+
+输入：`s = "++++"`
+输出：true
+解释：先手玩家可以通过将中间的 `"++"` 翻转为 `"+--+"` 来保证获胜。
+
+进阶：
+
+推导你的算法的时间复杂度。
 """
 
 from typing import List, Optional

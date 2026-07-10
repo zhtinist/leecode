@@ -1,5 +1,6 @@
 """
 LeetCode #256 - Paint House
+中文题名：粉刷房子
 https://leetcode.com/problems/paint-house/
 
 There are a row of *n* houses, each house can be painted with one of the three colors:
@@ -21,6 +22,22 @@ Input: [[17,2,17],[16,16,5],[14,3,19]]
 Output: 10
 Explanation: Paint house 0 into blue, paint house 1 into green, paint house 2 into blue.
 Minimum cost: 2 + 5 + 3 = 10.
+
+【中文翻译】
+有一排 *n* 个房子，每个房子可以被涂成红色、蓝色或绿色这三种颜色之一。用某种颜色粉刷每个房子都有不同的花费。你必须粉刷所有的房子，且相邻的两座房子颜色不能相同。
+
+用 `*n* x *3*` 的成本矩阵表示粉刷每个房子某种颜色的花费。例如，`costs[0][0]` 是粉刷 0 号房子为红色的花费；`costs[1][2]` 是粉刷 1 号房子为绿色的花费，以此类推……找出粉刷所有房子的最低花费。
+
+注意：
+
+所有花费均为正整数。
+
+示例：
+
+输入：[[17,2,17],[16,16,5],[14,3,19]]
+输出：10
+解释：将 0 号房子刷成蓝色，1 号房子刷成绿色，2 号房子刷成蓝色。
+最低花费：2 + 5 + 3 = 10。
 """
 
 from typing import List, Optional

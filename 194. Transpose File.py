@@ -1,5 +1,6 @@
 """
 LeetCode #194 - Transpose File
+中文题名：转置文件
 https://leetcode.com/problems/transpose-file/
 
 Given a text file `file.txt`, transpose its content.
@@ -16,6 +17,24 @@ alice 21
 ryan 30
 
 Output the following:
+
+name alice ryan
+age 21 30
+
+【中文翻译】
+给定一个文本文件 `file.txt`，转置其内容。
+
+你可以假设每一行具有相同数量的列，且每个字段由 `' '` 字符分隔。
+
+示例：
+
+如果 `file.txt` 的内容如下：
+
+name age
+alice 21
+ryan 30
+
+输出以下内容：
 
 name alice ryan
 age 21 30
