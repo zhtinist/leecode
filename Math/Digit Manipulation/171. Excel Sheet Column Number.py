@@ -1,0 +1,34 @@
+"""
+LeetCode #171 - Excel Sheet Column Number
+https://leetcode.com/problems/excel-sheet-column-number/
+
+Given a string columnTitle that represents the column title as appears in an
+Excel sheet, return its corresponding column number.
+
+Example 1:
+    Input: columnTitle = "A"
+    Output: 1
+
+Example 2:
+    Input: columnTitle = "AB"
+    Output: 28
+
+Example 3:
+    Input: columnTitle = "ZY"
+    Output: 701
+
+Constraints:
+    1 <= columnTitle.length <= 7
+    columnTitle consists only of uppercase English letters.
+    columnTitle is in the range ["A", "ZZZZZZZ"].
+"""
+
+
+class Solution:
+    def titleToNumber(self, columnTitle: str) -> int:
+        result = 0
+
+        for char in columnTitle:
+            result = result * 26 + (ord(char) - ord("A") + 1)
+
+        return result
